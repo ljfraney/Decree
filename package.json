@@ -1,0 +1,23 @@
+{
+  "name": "decree",
+  "version": "1.0.0",
+  "description": "Azure DevOps extension for creating global policies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljfraney/Decree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ljfraney/Decree/issues"
+  },
+  "homepage": "https://github.com/ljfraney/Decree#readme",
+  "dependencies": {
+    "vss-web-extension-sdk": "^5.141.0"
+  }
+}
