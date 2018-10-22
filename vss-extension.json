@@ -1,0 +1,39 @@
+{
+    "manifestVersion": 1,
+    "id": "decree",
+    "publisher": "JoshFraney",
+    "version": "1.0.1",
+    "name": "Decree",
+    "description": "Azure DevOps extension for creating global policies",
+    "public": false,
+    "categories": ["Repos"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "decree-hub",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-code-web.code-hub-group"
+            ],
+            "properties": {
+                "name": "My Policies",
+                "uri": "decree-hub.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "decree-hub.html",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ]
+}
