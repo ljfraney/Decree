@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>    
+    <script src="../sdk/VSS.SDK.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/decree.css">
+</head>
+<body>
+    <script type="text/javascript">
+        VSS.init({
+            usePlatformScripts: true,
+            usePlatformStyles: true
+        });
+
+        VSS.require(["dist/index"], function () {
+            VSS.notifyLoadSucceeded();
+        });
+    </script>
+
+    <div id="decree-container">
+        <span id="decree-heading"><span id="project"></span> Policies</span>
+        <hr>
+        <span id="decree-error"></span>
+        <span id="decree-success"></span>
+        <div id="decree-policies-grid"></div>
+        <p>Number of policies: <span id="decree-total-policies"></span></p>
+    </div>
+
+    <div id="decree-policy-details"></div>
+</body>
+</html>

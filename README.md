@@ -10,12 +10,17 @@ apply policies to repositories in the same project.
 
 ### Development Prerequisites
 
-* Install [Node.js](https://nodejs.org/en/).
-* Install the extension packaging tool (TFX).
+* [Node.js](https://nodejs.org/en/)
+* [TypeScript](https://www.typescriptlang.org)
+* The extension packaging tool (TFX)
 ```npm install -g tfx-cli```
 
 ### Deployment
 
-* Run the TFX tool's packaging command.
-```tfx extension create```
-* Upload the .vsix file to the [management portal](https://aka.ms/vsmarketplace-manage).
+* Compile TypeScript
+```tsc -p .```
+* Run the TFX tool's packaging command. This will imcrement the revision version in vss-extension.json automatically.
+```tfx extension create --rev-version```
+    * To increment the major or minor version, update the version number in vss-extension.json and run the above
+    command, omitting the `--rev-version` argument.
+* Upload the .vsix file to the [management portal](https://aka.ms/vsmarketplace-manage)

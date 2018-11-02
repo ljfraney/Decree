@@ -1,0 +1,26 @@
+body {
+    margin: 10px;    
+    font-family: "Segoe UI VSS (Regular)","-apple-system",BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+#decree-container {
+    padding: 20px;
+}
+
+#decree-heading
+{
+    font-weight: 200;
+    font-size: 18px;
+}
+
+#decree-error
+{
+    color: rgb(255, 95, 95);
+    font-weight: bold;
+}
+
+#decree-success
+{
+    color: rgb(69, 147, 57);
+    font-weight: bold;
+}

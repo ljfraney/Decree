@@ -11,13 +11,18 @@
     "url": "git+https://github.com/ljfraney/Decree.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Josh Franey",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ljfraney/Decree/issues"
   },
   "homepage": "https://github.com/ljfraney/Decree#readme",
   "dependencies": {
+    "@types/jquery": "^3.3.22",
     "vss-web-extension-sdk": "^5.141.0"
+  },
+  "devDependencies": {
+    "tfx-cli": "^0.6.3",
+    "typescript": "^3.1.3"
   }
 }
